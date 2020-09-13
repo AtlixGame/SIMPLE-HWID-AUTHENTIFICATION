@@ -7,14 +7,14 @@ try:
     if hwid in r.text:
         pass
     else:
-        print('[ERROR] HWID Not in database')
-        print(f'HWID: {hwid}') 
+        print('[>] [ERROR] HWID Not in database')
+        print(f'[>] HWID: {hwid}') 
         time.sleep(5)
         os._exit()
 except:
-    print('[ERROR] Failed to connect to database')
+    print('[>] [ERROR] Failed to connect to database')
     time.sleep(5) 
     os._exit() 
 
-print('You are Logged in')
-input()```
+print('[>] You are successfully connected !')
+input()
