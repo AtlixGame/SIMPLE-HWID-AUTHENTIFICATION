@@ -1,7 +1,7 @@
 import subprocess, requests, time, os
 
 hwid = subprocess.check_output('wmic csproduct get uuid').decode().split('\n')[1].strip()
-r = requests.get(ton pastabin pastebin.com')
+r = requests.get('ton pastabin pastebin.com')
 
 try:
     if hwid in r.text:
@@ -17,4 +17,4 @@ except:
     os._exit() 
 
 print('You are Logged in')
-input()
+input()```
